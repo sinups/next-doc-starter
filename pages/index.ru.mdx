@@ -1,0 +1,30 @@
+---
+title: Главная страница
+---
+
+import Callout from 'nextra-theme-docs/callout'
+import Features from '/components/features'
+import Bleed from 'nextra-theme-docs/bleed'
+
+<style jsx global>{`
+body {
+  background-image: radial-gradient(#ddd 1px, transparent 0),
+    radial-gradient(#ddd 1px, transparent 0);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+}
+.dark body {
+  background-image: radial-gradient(#333 1px, transparent 0),
+    radial-gradient(#333 1px, transparent 0);
+}
+`}</style>
+
+{<h1 className="text-center font-extrabold md:text-5xl mt-8">NDS</h1>}
+
+<Bleed><Features/></Bleed>
+
+Название “NDS” происходит от `next-documentation-starter`. NDS — это стартовыи репозитории для написания документации
+
+<div className="mt-16 mb-20 text-center">
+  [Начать работу](/docs/getting-started) · [Примеры](/examples) · [Репозиторий GitHub](https://github.com/sinups/nds)
+</div>
